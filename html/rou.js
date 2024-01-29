@@ -13,50 +13,114 @@ function rand(upper)
 
 function spinner()
 {
+    let table = document.getElementById("tbl");
+    let tr = document.createElement("tr");
+    table.appendChild(tr);
+
+
+///////////////////////////////////////////////////
+
 //  Print Number    
     let randIndex = rand(38);
-    let n = num[randIndex];
+    let n1 = num[randIndex];
 
-    console.log(n);
+    let td1 = document.createElement("td");
+    tr.appendChild(td1);
+    let txt1 = document.createTextNode(n1);
+    td1.appendChild(txt1);
+    //console.log(n1);
 
 //  Print Red for even or Black for odd
     if(randIndex %2 == 0)
     {
-        console.log("Red");
+        let n2 = "Red";
+
+        let td2 = document.createElement("td");
+        tr.appendChild(td2);
+        let txt2 = document.createTextNode(n2);
+        td2.appendChild(txt2);
+
+        
+        //console.log("Red");
     }
     else
     {
-        console.log("Black");
+        let n2 = "Black"
+        //console.log("Black");
+
+        let td2 = document.createElement("td");
+        tr.appendChild(td2);
+        let txt2 = document.createTextNode(n2);
+        td2.appendChild(txt2);
     }
 
 //  Print Even or Odd    
-    if(n === "00")
+    if(n1 === "00")
     {
-        console.log("Even");
+        let n3 = "Even";
+        //console.log("Even");
+
+        let td3 = document.createElement("td");
+        tr.appendChild(td3);
+        let txt3 = document.createTextNode(n3);
+        td3.appendChild(txt3);
     }
-    else if(n %2 == 0)
+    else if(n1 %2 == 0)
     {
-        console.log("Even");
+        let n3 = "Even";        
+        //console.log("Even");
+
+        let td3 = document.createElement("td");
+        tr.appendChild(td3);
+        let txt3 = document.createTextNode(n3);
+        td3.appendChild(txt3);
     }
     else
     {
-        console.log("Odd");
+        let n3 = "Odd";        
+        //console.log("Odd");
+
+        let td3 = document.createElement("td");
+        tr.appendChild(td3);
+        let txt3 = document.createTextNode(n3);
+        td3.appendChild(txt3);
     }
 
 // Print Failed or Passed
-    if(n === "00")
+    if(n1 === "00")
     {
-        console.log("Passed");
+        let n4 = "Passed";
+        //console.log("Passed");
+
+        let td4 = document.createElement("td");
+        tr.appendChild(td4);
+        let txt4 = document.createTextNode(n4);
+        td4.appendChild(txt4);
     }
-    else if(n < 19)
+    else if(n1 < 19)
     {
-        console.log("Failed");
+        let n4 = "Passed";
+        //console.log("Failed");
+
+        let td4 = document.createElement("td");
+        tr.appendChild(td4);
+        let txt4 = document.createTextNode(n4);
+        td4.appendChild(txt4);
     }
     else
     {
-        console.log("Passed");
+        let n4 = "Passed";
+        //console.log("Passed");
+
+        let td4 = document.createElement("td");
+        tr.appendChild(td4);
+        let txt4 = document.createTextNode(n4);
+        td4.appendChild(txt4);
     }
+/////////////////////////////////////////////////////
 
 }
 
 spinner();
+
+
